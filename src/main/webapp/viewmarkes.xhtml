@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+
+    </h:head>
+    <body>
+        <p:panel header="Y-SCHOOL WEB Student Details">
+            <h:form>    
+                <h:outputLabel value="Markes Details are Sucessfuly added"/>
+                <p:panelGrid columns="2">
+
+                    <h:outputLabel for="name" value="Name  " />
+                    <h:outputText value="#{mark.name}"/>
+
+                    <h:outputLabel for="subject" value="Subject  " />
+                    <h:outputText value="#{mark.subject}"/>
+
+                    <h:outputLabel for="markes" value="Markes  " />
+                    <h:outputText value="#{mark.markes}"/>
+
+                </p:panelGrid>
+                <p:commandButton value="Go-Back" action="index"/>   
+            </h:form>
+        </p:panel>
+    </body>
+</html>
